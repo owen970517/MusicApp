@@ -58,6 +58,7 @@ const music = document.querySelector('#audio-source');
 const seekBar = document.querySelector('.music-seek-bar');
 const songName = document.querySelector('.current-song-name');
 const artistName = document.querySelector('.artist-name');
+const songIylics = document.querySelector('.song-lyrics');
 const coverImage = document.querySelector('.cover');
 const currentMusicTime = document.querySelector('.current-time');
 const musicDuration = document.querySelector('.duration');
@@ -94,7 +95,7 @@ const setMusic = (i) => {
     songName.innerHTML = song.name;
     artistName.innerHTML = song.artist;
     coverImage.src = song.cover;
-    
+    songIylics.innerHTML = song.lyrics; 
     //0.3초 후에 딱 한번만 실행하는 setTimeout() 메소드 
     setTimeout(() => {
         seekBar.max = music.duration;
@@ -105,7 +106,7 @@ const setMusic = (i) => {
     queue[currentMusic].classList.add('active');
 }
 
-setMusic(7);
+setMusic(8);
 
 const formatTime = (time) => {
     let min = Math.floor(time / 60);

@@ -3,7 +3,8 @@ let songs = [
         name: 'song 1',
         path: 'musics/Song 1.mp3',
         artist: 'artist 1',
-        cover: 'images/cover 1.png'
+        cover: 'images/cover 1.png',
+        
     },
     {
         name: 'song 2',
@@ -47,4 +48,11 @@ let songs = [
         artist: 'artist 8',
         cover: 'images/cover 8.png'
     },
+    {
+        name : 'strawberry moon',
+        path : 'musics/iu.mp3',
+        artist : '아이유',
+        cover : 'images/iu.jpg',
+        lyrics : '달이 익어가니 서둘러 젊은 피야 민들레 한 송이 들고'
+    }
 ]

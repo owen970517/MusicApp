@@ -184,18 +184,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+.music-player-section.active .song-lyrics {
+    margin-top: 20px;
+    text-align: center;
+}
 .music-player-section.active .music-seek-bar {
     position: relative;
     display: block;
     border-radius: 50px;
-    margin: auto;
+    margin-top : 200px;
 }
 .music-player-section.active .current-song-name {
     font-size: 40px;
 }
 .music-player-section.active .controls {
     width: 100%;
-    font-size: 50px;
+    font-size: 30px;
 }
 .artist-name
 {
