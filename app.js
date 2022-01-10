@@ -58,7 +58,13 @@ const music = document.querySelector('#audio-source');
 const seekBar = document.querySelector('.music-seek-bar');
 const songName = document.querySelector('.current-song-name');
 const artistName = document.querySelector('.artist-name');
-const songIylics = document.querySelector('.song-lyrics');
+const songIylics = document.querySelector('.song-lyric');
+const songIylics2 = document.querySelector('.song-lyric2');
+const songIylics3 = document.querySelector('.song-lyric3');
+const songIylics4 = document.querySelector('.song-lyric4');
+const songIylics5 = document.querySelector('.song-lyric5');
+const songIylics6 = document.querySelector('.song-lyric6');
+const songIylics7 = document.querySelector('.song-lyric7');
 const coverImage = document.querySelector('.cover');
 const currentMusicTime = document.querySelector('.current-time');
 const musicDuration = document.querySelector('.duration');
@@ -88,6 +94,7 @@ pauseBtn.addEventListener('click' , () => {
 const setMusic = (i) => {
     seekBar.value =0;
     let song = songs[i];
+    let lyric = lyrics[i];
     currentMusic= i;
 
     music.src = song.path;
@@ -95,7 +102,12 @@ const setMusic = (i) => {
     songName.innerHTML = song.name;
     artistName.innerHTML = song.artist;
     coverImage.src = song.cover;
-    songIylics.innerHTML = song.lyrics; 
+    songIylics.innerHTML = lyric.lyric; 
+    songIylics2.innerHTML = lyric.lyric2;
+    songIylics3.innerHTML = lyric.lyric3;
+    songIylics4.innerHTML = lyric.lyric4;
+    songIylics5.innerHTML = lyric.lyric5;
+
     //0.3초 후에 딱 한번만 실행하는 setTimeout() 메소드 
     setTimeout(() => {
         seekBar.max = music.duration;

@@ -52,7 +52,6 @@ let songs = [
         name : 'strawberry moon',
         path : 'musics/iu.mp3',
         artist : '아이유',
-        cover : 'images/iu.jpg',
-        lyrics : '달이 익어가니 서둘러 젊은 피야 민들레 한 송이 들고'
+        cover : 'images/iu.jpg',        
     }
 ]
