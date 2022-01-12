@@ -68,7 +68,7 @@ const songIylics7 = document.querySelector('.song-lyric7');
 const coverImage = document.querySelector('.cover');
 const currentMusicTime = document.querySelector('.current-time');
 const musicDuration = document.querySelector('.duration');
-
+const musiclistTime = document.querySelectorAll('.musicTime');
 const queue = [...document.querySelectorAll('.queue')];
 
 const forwardBtn = document.querySelector('.fa-forward');
@@ -112,10 +112,12 @@ const setMusic = (i) => {
     setTimeout(() => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = formatTime(music.duration);
+       
     },300);
     currentMusicTime.innerHTML = '00 : 00';
     queue.forEach(item=>item.classList.remove('active'));
     queue[currentMusic].classList.add('active');
+    
 }
 
 setMusic(8);
@@ -189,4 +191,5 @@ queue.forEach((item , i) => {
         setMusic(i);
         playBtn.click();
     })
+    
 })
